@@ -16,7 +16,7 @@ body {
   width: 55%;
   margin: 0;
   padding: 20px 22.5%;
-  color: #ffffff;
+  
   display: flex;
   justify-content: space-around;
 }
@@ -26,4 +26,40 @@ body {
   text-align: center;
   flex: 1;
   align-items: flex-end;
+  color: #ffffff;
+  
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navitem:hover {
+    color: #1f7a8c;
+}
+
+h1 {
+  color: #bfdbf7;
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto;
+}
+
+h2 {
+  color: #bfdbf7;
+ text-align: center;
+  font-size: 2rem;
+  margin: 20px auto;
+}
+
+h3 {
+  color: #1f7a8c;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #e1e5f2;
+}
+
+section {
+    margin: 10px 10%;
 }
