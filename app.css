@@ -1,0 +1,29 @@
+body {
+  background-color: #022b3a;
+  margin: 0 auto;
+}
+
+#jumbotron {
+  background-image: url("Photos/headshot2-cropped-bw.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  height: 500px;
+}
+
+#navflex {
+  list-style: none;
+  width: 55%;
+  margin: 0;
+  padding: 20px 22.5%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navitem {
+  flex-direction: row;
+  text-align: center;
+  flex: 1;
+  align-items: flex-end;
+}
