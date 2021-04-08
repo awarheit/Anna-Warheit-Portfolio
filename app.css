@@ -16,7 +16,6 @@ body {
   width: 55%;
   margin: 0;
   padding: 20px 22.5%;
-  
   display: flex;
   justify-content: space-around;
 }
@@ -54,12 +53,32 @@ h2 {
 h3 {
   color: #1f7a8c;
   font-size: 1.5rem;
+  margin-left: 100px;
 }
 
 p {
   color: #e1e5f2;
+  display: inline-block;
 }
 
-section {
+.container {
     margin: 10px 10%;
+    display: flex;
+    justify-content: center;
 }
+
+#sidebar {
+    width: 20%;
+}
+
+#headshot {
+    width: 100%;
+}
+
+#about-main {
+    width: 80%;
+    padding: 30px;
+    align-items: flex-end;
+}
+
+
