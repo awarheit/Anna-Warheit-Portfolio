@@ -3,51 +3,65 @@ body {
   margin: 0 auto;
 }
 
+#navflex {
+    list-style: none;
+    width: 55%;
+    margin: 0;
+    padding: 20px 22.5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    position: sticky;
+  }
+  
+  .navitem {
+    flex-direction: row;
+    text-align: center;
+    flex: 1;
+    align-items: flex-end;
+    color: #022b3a;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navitem:hover {
+      color: #1f7a8c;
+  }
+
 #jumbotron {
   background-image: url("Photos/IndexHeaderSelfPortrait.jpg");
   background-size: contain;
   background-position: center;
   margin: 0 auto;
   height: 500px;
+  margin-bottom: -200px;
 }
 
-#navflex {
-  list-style: none;
-  width: 55%;
-  margin: 0;
-  padding: 20px 22.5%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.navitem {
-  flex-direction: row;
-  text-align: center;
-  flex: 1;
-  align-items: flex-end;
-  color: #ffffff;
-  
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.navitem:hover {
-    color: #1f7a8c;
-}
+aside {
+    background-color: #022b3a;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+ }
 
 h1 {
   color: #bfdbf7;
   text-align: center;
   font-size: 3rem;
-  margin: 20px auto;
+  margin: 35px auto 10px;
 }
 
 h2 {
   color: #bfdbf7;
  text-align: center;
-  font-size: 2rem;
-  margin: 20px auto;
+  font-size: 1.6rem;
+  margin: 5px auto;
 }
 
 h3 {
