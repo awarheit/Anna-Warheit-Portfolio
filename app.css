@@ -4,8 +4,8 @@ body {
 }
 
 #jumbotron {
-  background-image: url("Photos/headshot2-cropped-bw.jpg");
-  background-size: cover;
+  background-image: url("Photos/IndexHeaderSelfPortrait.jpg");
+  background-size: contain;
   background-position: center;
   margin: 0 auto;
   height: 500px;
