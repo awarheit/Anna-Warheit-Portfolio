@@ -23,10 +23,11 @@ body {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Rock Salt', cursive;
   }
   
   .navitem:hover {
-      color: #1f7a8c;
+      color: #8fa02f;
   }
 
 #jumbotron {
@@ -55,6 +56,9 @@ h1 {
   text-align: center;
   font-size: 3rem;
   margin: 35px auto 10px;
+  font-family: 'Rock Salt', cursive;
+  font-weight: 100; 
+line-height: 4.5rem;
 }
 
 h2 {
@@ -62,7 +66,9 @@ h2 {
  text-align: center;
   font-size: 1.6rem;
   margin: 5px auto;
-}
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+ }
 
 h3 {
   color: #1f7a8c;
