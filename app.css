@@ -31,10 +31,11 @@ body {
 
 #jumbotron {
   background-image: url("Photos/IndexHeaderSelfPortrait.jpg");
-  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   margin: 0 auto;
-  height: 500px;
+  height: 450px;
   margin-bottom: -200px;
 }
 
@@ -48,6 +49,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: -100px;
 }
 
 h1 {
@@ -94,6 +96,7 @@ p {
   margin: 10px 10%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #sidebar {
@@ -103,9 +106,7 @@ p {
   margin: 10px auto;
   width: 20%;
   height: 300px;
-  }
-
-
+}
 
 #about-copy {
   width: 80%;
@@ -117,25 +118,68 @@ p {
   background-image: linear-gradient(#022b3a, #1f7a8c);
   margin: 0 auto;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 #projects {
-  background-image: linear-gradient(#1f7a8c, #022b3a);
+  background-color: #fff;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
+/* WILL MAKE THIS WHOLE CAROUSEL SECTION BETTER ONCE I LEARN JAVASCRIPT!*/
+#gallerycarousel {
+  width: 90%;
+  min-height: 500px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolioprojectfeature {
+    background-image: url("Photos/DroletRemodelingHomepageScreenshot.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 296.8px;
+    width: 460.6px;
+    margin: 0 -15px;
+  }
+
+#portfolioprojectfeature:hover {
+    height: 424px;
+    width: 658px;
+    transition: 0.5s;
+}
+
+#portfolioproject2 {
+  background-image: url("Photos/marcel-strauss-3Zlg1lgCu4E-unsplash.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 153.6px;
+  width: 273.2px;
+  }
+
+#portfolioproject3 {
+  background-image: url("Photos/myportfolioscreenshot.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 153.6px;
+  width: 273.2px;
+}
+/* WILL MAKE THIS WHOLE CAROUSEL SECTION ^ BETTER ONCE I LEARN JAVASCRIPT!*/
+
 #skills {
-  background-image: linear-gradient(#022b3a, #1f7a8c);
+  background-color: #fff;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
 #contact {
-  background-image: linear-gradient(#1f7a8c, #022b3a);
+  background-color: #fff;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 10px;
