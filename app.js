@@ -21,13 +21,12 @@ navbarToggle.addEventListener("click", () => {
 })
 
 // ALLOWING USER TO CLOSE NAVIGATION MENU WHEN CLICK ON .navbarmenu
+const navbarMenu = navbar.querySelector(".navbarmenu");
+navbarMenu.addEventListener("click", closeMobileNavbar);
+
 // BUT NOT WHEN CLICKING ON .navbarlinks:
-// COMMENTING OUT FOR NOW B/C NOT SURE THIS IS WORKING RIGHT:
-//const navbarMenu = navbar.querySelector(".navbarmenu");
+// COMMENTING OUT THIS PART FOR NOW B/C NOT SURE IT'S WORKING RIGHT:
 //const navbarLinksContainer = navbar.querySelector(".navbarlinks");
-
 //navbarLinksContainer.addEventListener("click", (clickEvent) => {
-//    clickEvent.stopPropagation();
+ //   clickEvent.stopPropagation();
 //});
-
-//navbarMenu.addEventListener("click", closeMobileNavbar);
