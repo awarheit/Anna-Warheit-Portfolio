@@ -22,7 +22,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   height: 100%;
   align-items: center;
 }
@@ -309,6 +309,10 @@ p {
 
   #navbar {
     background-color: #fff;
+  }
+
+  .navbarcontainer {
+    justify-content: space-around;
   }
 
   #navbar .navbarmenu,
