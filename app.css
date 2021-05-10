@@ -3,6 +3,8 @@ body {
   margin: 0 auto;
 }
 
+/* -----------------NAVIGATION BAR------------------*/
+
 #navbar {
   --navbar-height: 64px;
   position: fixed;
@@ -23,7 +25,6 @@ body {
   justify-content: space-around;
   height: 100%;
   align-items: center;
-
 }
 
 .navbarlink {
@@ -46,12 +47,11 @@ body {
   text-align: center;
   flex: 1;
   flex-direction: column;
-
 }
 
 .navbarlink:focus,
 .navbarlink:hover {
-  color:#fff;
+  color: #fff;
   background-color: #bfdbf733;
 }
 
@@ -72,9 +72,8 @@ body {
   width: 25px;
   height: 4px;
   margin: 2px;
-  transition: background-color 0.2s ease-in-out,
-              transform 0.2s ease-in-out,
-              opacity 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
   background-color: turquoise;
 }
 
@@ -106,8 +105,7 @@ body {
   position: fixed;
   top: var(--navbar-height);
   bottom: 0;
-  transition: opacity 0.2s ease-in-out,
-              visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   opacity: 0;
   visibility: hidden;
   left: 0;
@@ -141,53 +139,54 @@ body {
   max-height: none;
 }
 
+/* ------------END NAVIGATION BAR--------------*/
 
 #jumbotron {
   background-image: url("Photos/IndexHeaderSelfPortrait.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
   margin: 0 auto;
   height: 450px;
-  margin-bottom: -200px;
+  margin-bottom: -150px;
 }
 
 #titlecircle {
   background-color: #022b3a;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
-
 
 .container {
   margin: 10px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
   color: #fff;
   text-align: center;
-  font-size: 3rem;
-  margin: 35px auto 10px;
+  font-size: 1.5rem;
+  margin: 55px auto -10px;
   font-family: "Rock Salt", cursive;
   font-weight: 100;
-  line-height: 4.5rem;
+  line-height: 4rem;
 }
 
 h2 {
   color: #bfdbf7;
   text-align: center;
-  font-size: 1.6rem;
-  margin: 5px auto;
+  font-size: 1.0rem;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
 }
@@ -195,31 +194,32 @@ h2 {
 .h3light {
   color: #1f7a8c;
   font-size: 1.5rem;
-  margin: 0 0 0 100px;
+  margin: 0 auto;
+  text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
 .h3dark {
   color: #022b3a;
   font-size: 1.5rem;
-  margin: 0 0 0 100px;
+  margin: 0 auto;
+  text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
 p {
   color: #e1e5f2;
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   margin: 0 auto;
 }
 
 #sidebar {
   background-image: url("Photos/Headshot_cropped.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   margin: 10px auto;
-  width: 20%;
-  height: 300px;
+  width: 60%;
+  height: 250px;
 }
 
 #about-copy {
@@ -299,29 +299,43 @@ p {
   padding-bottom: 10px;
 }
 
-/*@media (max-width: 992px) {
-  #navflex {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 0 20px 20px;
-    margin: 0 0 -250px 0;
-  }
-}*/
+/* ------------------RESPONSIVE SIZING-----------------*/
+/* ------------------(Default Mobile)------------------*/
 
-@media (max-width: 480px) {
+
+@media (min-width: 700px) {
   #titlecircle {
-    width: 300px;
-    height: 300px;
-    margin-bottom: -50px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: -100px;
   }
   h1 {
-    font-size: 1.3rem;
+    font-size: 3rem;
+    margin: 35px auto 10px;
+    line-height: 4.5rem;
   }
   h2 {
-    font-size: 0.5rem;
+    font-size: 1.6rem;
+    margin: 5px auto;
   }
+
   #jumbotron {
-    margin-bottom: -150px;
-    background-position: right;
+    margin-bottom: -200px;
+    background-position: center;
+  }
+
+  .h3dark, .h3light {
+    margin: 0 0 0 100px;
+    text-align: start;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  #sidebar {
+    width: 20%;
+    height: 300px;
   }
 }
+
