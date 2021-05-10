@@ -3,31 +3,141 @@ body {
   margin: 0 auto;
 }
 
-#navflex {
-  list-style: none;
-  width: 55%;
-  margin: 0;
-  padding: 20px 22.5%;
-  display: flex;
-  justify-content: space-around;
+#navbar {
+  --navbar-height: 64px;
+  position: fixed;
+  height: var(--navbar-height);
   background-color: #fff;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.15);
 }
 
-.navitem {
-  flex-direction: row;
+.navbarcontainer {
+  /* width: 55%; 
+  margin: 0;
+  padding: 20px 22.5%; */
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+.navbaritem {
+  margin: 0.4em;
+  width: 100%;
+  /* flex-direction: row;
   text-align: center;
   flex: 1;
   align-items: flex-end;
-  color: #022b3a;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Rock Salt", cursive;
+  font-family: "Rock Salt", cursive;*/
 }
 
-.navitem:hover {
+/*.navbaritem:hover {
   color: #8fa02f;
+}*/
+
+.navbarlinks {
+  color: #000;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  justify-content: center;
+  width: 100%;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
 }
+
+.navbarlinks:focus,
+.navbarlinks:hover {
+  color: red;
+  background-color: yellow;
+}
+
+.navbartoggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.iconbar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 2px;
+  transition: background-color 0.2s ease-in-out,
+              transform 0.2s ease-in-out,
+              opacity 0.2s ease-in-out;
+  background-color: turquoise;
+}
+
+.navbartoggle:focus .iconbar,
+.navbartoggle:hover .iconbar {
+  background-color: red;
+}
+
+#navbar.opened .navbartoggle .iconbar:first-child,
+#navbar.opened .navbartoggle .iconbar:last-child {
+  position: absolute;
+  margin: 0;
+  width: 30px;
+}
+
+#navbar.opened .navbartoggle .iconbar:first-child {
+  transform: rotate(45deg);
+}
+
+#navbar.opened .navbartoggle .iconbar:nth-child(2) {
+  opacity: 0;
+}
+
+#navbar.opened .navbartoggle .iconbar:last-child {
+  transform: rotate(-45deg);
+}
+
+.navbarmenu {
+  position: fixed;
+  top: var(--navbar-height);
+  bottom: 0;
+  transition: opacity 0.2s ease-in-out,
+              visibility 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+}
+
+#navbar.opened .navbarmenu {
+  background-color: rgba(0, 0, 0, 0, 0.4);
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbarlinks {
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #1f7a8c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 0;
+  right: 0;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 
 
@@ -39,9 +149,9 @@ body {
   margin: 0 auto;
   height: 450px;
   margin-bottom: -200px;
-  }
+}
 
-#headercircle {
+#titlecircle {
   background-color: #022b3a;
   border-radius: 50%;
   width: 400px;
@@ -142,18 +252,18 @@ p {
 }
 
 #portfolioprojectfeature {
-    background-image: url("Photos/DroletRemodelingHomepageScreenshot.jpg");
-    background-size: contain;
-    background-position: center;
-    height: 296.8px;
-    width: 460.6px;
-    margin: 0 -15px;
-  }
+  background-image: url("Photos/DroletRemodelingHomepageScreenshot.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 296.8px;
+  width: 460.6px;
+  margin: 0 -15px;
+}
 
 #portfolioprojectfeature:hover {
-    height: 424px;
-    width: 658px;
-    transition: 0.5s;
+  height: 424px;
+  width: 658px;
+  transition: 0.5s;
 }
 
 #portfolioproject2 {
@@ -162,7 +272,7 @@ p {
   background-position: center;
   height: 153.6px;
   width: 273.2px;
-  }
+}
 
 #portfolioproject3 {
   background-image: url("Photos/myportfolioscreenshot.jpg");
@@ -188,30 +298,32 @@ p {
 }
 
 @media (max-width: 992px) {
-    #navflex {
-       flex-direction: column;
-       align-items: flex-start;
-       padding: 20px 0 20px 20px;
-       margin: 0 0 -250px 0;
-    }
+  #navflex {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 20px 20px;
+    margin: 0 0 -250px 0;
+  }
 }
 
 @media (max-width: 480px) {
-    #headercircle {
-        width: 300px;
-        height: 300px;
-        margin-bottom: -50px;
-    }
-    h1 {
-        font-size: 1.3rem;
-    }
-    h2 {
-        font-size: 0.5rem;
-    }
-    #jumbotron {
-        margin-bottom: -150px;
-        background-position: right;
-    }
-    /* NEED TO FIGURE OUT HOW TO COLLAPSE NAVBAR INTO 
-    HAMBURGER ICON AT THIS BREAKPOINT TOO! */
+  #titlecircle {
+    width: 300px;
+    height: 300px;
+    margin-bottom: -50px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 0.5rem;
+  }
+  #jumbotron {
+    margin-bottom: -150px;
+    background-position: right;
+  }
+  /* NEED TO FIGURE OUT HOW TO COLLAPSE NAVBAR INTO 
+    HAMBURGER ICON AT THIS BREAKPOINT TOO! HINT: USE JAVASCRIPT!
+    Try this (after you've learned JavaScript): 
+    https://www.aleksandrhovhannisyan.com/blog/responsive-navbar-without-bootstrap/#navbar-hamburger-icon */
 }

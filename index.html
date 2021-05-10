@@ -15,24 +15,33 @@
 </head>
 
 <body>
-    <nav>
-        <ul id="navflex">
-            <li class="navitem">About</li>
-            <li class="navitem">Projects</li>
-            <li class="navitem">Skills</li>
-            <li class="navitem">Contact Me</li>
-        </ul>
-    </nav>
+    <header id="navbar">
+        <nav class="navbarcontainer container">
+                <button type="button" class="navbartoggle" aria-label="Open navigation menu">
+                <span class="iconbar"></span>
+                <span class="iconbar"></span>
+                <span class="iconbar"></span>
+            </button>
+            <div class="navbarmenu">
+                <ul class="navbarlinks">
+                    <li class="navbaritem"><a class="navbarlink" href="/about">About</a></li>
+                    <li class="navbaritem"><a class="navbarlink" href="/projects">Projects</a></li>
+                    <li class="navbaritem"><a class="navbarlink" href="/skills">Skills</a></li>
+                    <li class="navbaritem"><a class="navbarlink" href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    
+
     <h1 id="jumbotron"></h1>
 
-    <header>
-        <aside id="headercircle">
+    <div>
+        <aside id="titlecircle">
             <h1>Anna Warheit</h1>
             <h2>Front End Web Developer</h2>
         </aside>
-    </header>
+    </div>
 
     <section id="about">
         <h3 class="h3light">About</h3>
@@ -121,6 +130,8 @@
         <p>Footer content here</p>
     </footer>
 
+
+    <script src="app.js"></script>
 </body>
 
 </html>
