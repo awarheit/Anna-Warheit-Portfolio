@@ -43,7 +43,7 @@ body {
 
 .navbaritem {
   margin: 0.4em;
-  width: 100%;
+  width: 80%;
   text-align: center;
   flex: 1;
   flex-direction: column;
@@ -120,6 +120,7 @@ body {
 
 .navbarlinks {
   list-style-type: none;
+  width: 60%;
   max-height: 0;
   overflow: hidden;
   position: absolute;
@@ -129,7 +130,7 @@ body {
   align-items: center;
   left: 0;
   right: 0;
-  margin: 1.4rem;
+  margin: 1.4rem auto;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
 }
@@ -141,29 +142,6 @@ body {
 
 /* ------------END NAVIGATION BAR--------------*/
 
-#jumbotron {
-  background-image: url("Photos/HeaderPhoto.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-  margin: 0 auto;
-  height: 450px;
-  margin-bottom: -150px;
-}
-
-#titlecircle {
-  background-color: #022b3a;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: -50px;
-}
-
 .container {
   margin: 10px 10%;
   display: flex;
@@ -172,11 +150,25 @@ body {
   flex-wrap: wrap;
 }
 
+#jumbotron {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  margin: 0 auto;
+  height: 450px;
+}
+
+#bannertext {
+  margin: 0 auto;
+  padding: 200px 0 0;
+}
+
 h1 {
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
-  margin: 55px auto -10px;
+  margin: 20px auto;
   font-family: "Rock Salt", cursive;
   font-weight: 100;
   line-height: 4rem;
@@ -354,10 +346,18 @@ p {
     text-shadow: 0 2px 1px #1f7a8c;
   }
 
-  #titlecircle {
-    width: 400px;
-    height: 400px;
-    margin-bottom: -100px;
+  #jumbotron {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    margin: 0 auto;
+    height: 450px;
+  }
+  
+  #bannertext {
+    margin: 0 auto;
+    padding: 200px 0 0;
   }
 
   h1 {
@@ -369,11 +369,6 @@ p {
   h2 {
     font-size: 1.6rem;
     margin: 5px auto;
-  }
-
-  #jumbotron {
-    margin-bottom: -200px;
-    background-position: center;
   }
 
   .h3dark,
