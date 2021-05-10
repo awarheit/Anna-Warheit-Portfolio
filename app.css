@@ -7,56 +7,52 @@ body {
   --navbar-height: 64px;
   position: fixed;
   height: var(--navbar-height);
-  background-color: #fff;
+  background-color: #022b3a;
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.15);
 }
 
 .navbarcontainer {
-  /* width: 55%; 
-  margin: 0;
-  padding: 20px 22.5%; */
+  max-width: 1000px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-around;
   height: 100%;
   align-items: center;
+
+}
+
+.navbarlink {
+  color: #022b3a;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  width: 100%;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  font-family: "Rock Salt", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbaritem {
   margin: 0.4em;
   width: 100%;
-  /* flex-direction: row;
   text-align: center;
   flex: 1;
-  align-items: flex-end;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "Rock Salt", cursive;*/
+  flex-direction: column;
+
 }
 
-/*.navbaritem:hover {
-  color: #8fa02f;
-}*/
-
-.navbarlinks {
-  color: #000;
-  transition: color 0.2s ease-in-out;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  justify-content: center;
-  width: 100%;
-  padding: 0.4em 0.8em;
-  border-radius: 5px;
-}
-
-.navbarlinks:focus,
-.navbarlinks:hover {
-  color: red;
-  background-color: yellow;
+.navbarlink:focus,
+.navbarlink:hover {
+  color:#fff;
+  background-color: #bfdbf733;
 }
 
 .navbartoggle {
@@ -84,7 +80,7 @@ body {
 
 .navbartoggle:focus .iconbar,
 .navbartoggle:hover .iconbar {
-  background-color: red;
+  background-color: turquoise;
 }
 
 #navbar.opened .navbartoggle .iconbar:first-child,
@@ -131,14 +127,19 @@ body {
   position: absolute;
   background-color: #1f7a8c;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   left: 0;
   right: 0;
+  margin: 1.4rem;
+  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
 }
 
-
+#navbar.opened .navbarlinks {
+  padding: 1em;
+  max-height: none;
+}
 
 
 #jumbotron {
@@ -162,6 +163,14 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: -100px;
+}
+
+
+.container {
+  margin: 10px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -202,13 +211,6 @@ p {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   margin: 0 auto;
-}
-
-.container {
-  margin: 10px 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #sidebar {
@@ -297,14 +299,14 @@ p {
   padding-bottom: 10px;
 }
 
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
   #navflex {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 0 20px 20px;
     margin: 0 0 -250px 0;
   }
-}
+}*/
 
 @media (max-width: 480px) {
   #titlecircle {
@@ -322,8 +324,4 @@ p {
     margin-bottom: -150px;
     background-position: right;
   }
-  /* NEED TO FIGURE OUT HOW TO COLLAPSE NAVBAR INTO 
-    HAMBURGER ICON AT THIS BREAKPOINT TOO! HINT: USE JAVASCRIPT!
-    Try this (after you've learned JavaScript): 
-    https://www.aleksandrhovhannisyan.com/blog/responsive-navbar-without-bootstrap/#navbar-hamburger-icon */
 }
