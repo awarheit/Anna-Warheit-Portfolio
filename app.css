@@ -35,10 +35,10 @@ body {
   width: 100%;
   padding: 0.4em 0.8em;
   border-radius: 5px;
-  font-family: "Rock Salt", cursive;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 100;
+  text-transform: lowercase;
 }
 
 .navbaritem {
@@ -142,7 +142,7 @@ body {
 
 /* ------------END NAVIGATION BAR--------------*/
 
-.container {
+.container, .aboutContainer, .projectsContainer, .skillsContainer, .contactContainer {
   margin: 10px 10%;
   display: flex;
   justify-content: center;
@@ -169,8 +169,8 @@ h1 {
   text-align: center;
   font-size: 1.5rem;
   margin: 20px auto;
-  font-family: "Rock Salt", cursive;
-  font-weight: 100;
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
   line-height: 4rem;
 }
 
@@ -183,44 +183,39 @@ h2 {
   font-weight: 100;
 }
 
-.h3light {
+#h3about, #h3projects, #h3skills, #h3contact {
   color: #1f7a8c;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   margin: 0 auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
-.h3dark {
-  color: #022b3a;
-  font-size: 1.5rem;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+#h3about {
+  background-image: linear-gradient(#1f7a8c, #022b3a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 p {
   color: #e1e5f2;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Newsreader', serif;
+  font-weight: 200;
+  font-size: 18px;
   margin: 0 auto;
-}
-
-#sidebar {
-  background-image: url("Photos/IMG_6179croppedBW.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 10px auto;
-  width: 60%;
-  height: 250px;
-  border-radius: 0 18% 0 18%;
-}
-
-
-#about-copy {
-  width: 80%;
-  padding: 10px 0 10px 30px;
-  align-items: flex-end;
+  box-sizing: border-box;
 }
 
 #about {
@@ -228,7 +223,32 @@ p {
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
+
+#sidebar {
+  background-image: url("Photos/IMG_6179croppedBW.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+  width: 50%;
+  height: 250px;
+  border-radius: 0 18% 0 18%;
+  box-sizing: border-box;
+}
+
+
+#about-copy {
+  width: 80%;
+  padding: 10px 0 10px 30px;
+  text-align: center;
+}
+
+
 
 #projects {
   background-color: #000;
@@ -294,6 +314,10 @@ p {
   padding-bottom: 10px;
 }
 
+#contact p {
+  text-align: center;
+}
+
 /* ------------------RESPONSIVE SIZING-----------------*/
 /* ------------------(Default Mobile)------------------*/
 
@@ -304,6 +328,7 @@ p {
 
   #navbar {
     background-color: #000;
+
   }
 
   .navbarcontainer {
@@ -344,9 +369,11 @@ p {
 
   .navbarlink:focus,
   .navbarlink:hover {
-    color: #fff;
+    color: #bfdbf7;
+    font-weight: 600;
     background-color: #000;
-    text-shadow: 0 2px 1px #1f7a8c;
+    text-shadow: 0 1px 1px #1f7a8c;
+    transition: ease-in-out;
   }
 
   #jumbotron {
@@ -374,18 +401,53 @@ p {
     margin: 5px auto;
   }
 
-  .h3dark,
-  .h3light {
-    margin: 0 0 0 100px;
-    text-align: start;
-  }
+.container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
-  .container {
+.aboutContainer {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+  #about {
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 
+   #h3about {
+   font-size: 100px;
+   text-align: center;
+   transform: rotate(-90deg);
+   margin: 0 0 0 0px;
+   width: 500px;
+    margin: 0 0 0 -130px;
+    color: linear-gradient(#bfdbf7, #022b3a);
+  }
+
   #sidebar {
-    width: 20%;
+    margin: 0 0 0 -100px;
     height: 300px;
   }
+
+  #about-copy {
+    width: 80%;
+    padding: 30px;
+  }
+
+  #gallerycarousel {
+    margin: 0 0 0 0px;
+  }
+
+#projects {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: lavender;
+}
+
+
+
 }
