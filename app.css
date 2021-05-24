@@ -206,13 +206,16 @@ p {
 }
 
 #sidebar {
-  background-image: url("Photos/Headshot_cropped.jpg");
-  background-size: cover;
+  background-image: url("Photos/IMG_6179croppedBW.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   margin: 10px auto;
   width: 60%;
   height: 250px;
+  border-radius: 0 18% 0 18%;
 }
+
 
 #about-copy {
   width: 80%;
