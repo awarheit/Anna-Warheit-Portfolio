@@ -76,12 +76,12 @@ body {
   margin: 2px;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
     opacity 0.2s ease-in-out;
-  background-color:#1f7a8c;
+  background-color: #1f7a8c;
 }
 
 .navbartoggle:focus .iconbar,
 .navbartoggle:hover .iconbar {
-  background-color:#1f7a8c;
+  background-color: #1f7a8c;
 }
 
 #navbar.opened .navbartoggle .iconbar:first-child,
@@ -144,7 +144,10 @@ body {
 
 /* ------------END NAVIGATION BAR--------------*/
 
-.container, #aboutContainer, #projectsContainer, #skillsContainer {
+.container,
+#aboutContainer,
+#projectsContainer,
+#skillsContainer {
   margin: 10px 10%;
   display: flex;
   justify-content: center;
@@ -165,7 +168,7 @@ body {
   color: #fff;
   text-align: center;
   font-size: 32px;
-  font-family: 'Newsreader', serif;
+  font-family: "Newsreader", serif;
   font-weight: 500;
   line-height: 2rem;
   margin: 0 auto;
@@ -181,7 +184,10 @@ h2 {
   font-weight: 100;
 }
 
-#h3about, #h3projects, #h3skills, #h3contact {
+#h3about,
+#h3projects,
+#h3skills,
+#h3contact {
   color: #1f7a8c;
   font-size: 70px;
   margin: 0 auto;
@@ -206,7 +212,7 @@ h2 {
 
 p {
   color: #e1e5f2;
-  font-family: 'Newsreader', serif;
+  font-family: "Newsreader", serif;
   font-weight: 200;
   font-size: 18px;
   margin: 0 auto;
@@ -234,6 +240,7 @@ p {
   height: 250px;
   border-radius: 0 18% 0 18%;
   box-sizing: border-box;
+  max-width: 250px;
 }
 
 #about-copy {
@@ -242,7 +249,9 @@ p {
   text-align: center;
 }
 
-#projectsContainer, #skillsContainer, #contactContainer {
+#projectsContainer,
+#skillsContainer,
+#contactContainer {
   background-color: #000;
   margin: 0 auto;
   padding-top: 30px;
@@ -254,7 +263,6 @@ p {
   width: 90%;
   min-height: 500px;
   margin: 0 auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +284,7 @@ p {
 }
 
 #portfolioproject2 {
-  background-image: url("Photos/marcel-strauss-3Zlg1lgCu4E-unsplash.jpg");
+  background-image: url("Photos/AdditionRainbow.jpg");
   background-size: contain;
   background-position: center;
   height: 153.6px;
@@ -298,11 +306,40 @@ p {
   font-size: 20px;
 }
 
+#contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formTitle {
+  color: #fff;
+  font-weight: normal;
+}
+
+#contactForm {
+  background-color: #022b3a;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#contactForm label {
+  color: #bfdbf7;
+}
+
+#message {
+  height: 30px;
+}
+
 a {
   text-decoration: none;
   color: #fff;
   line-height: 30px;
-  font-family: 'Newsreader', serif;
+  font-family: "Newsreader", serif;
   font-weight: 200;
 }
 
@@ -321,7 +358,7 @@ a:hover {
     display: none;
   }
 
-    .navbarcontainer {
+  .navbarcontainer {
     justify-content: space-around;
   }
 
@@ -349,13 +386,13 @@ a:hover {
     background-color: transparent;
   }
 
- .navbaritem {
+  .navbaritem {
     padding: 0 10px;
   }
 
-.navbarlink {
-  color: #fff;
-}
+  .navbarlink {
+    color: #fff;
+  }
 
   .navbarlink:focus,
   .navbarlink:hover {
@@ -374,7 +411,7 @@ a:hover {
     margin: 0 auto;
     height: 450px;
   }
-  
+
   #bannertext {
     margin: 0 auto;
     padding: 200px 0 0;
@@ -391,47 +428,107 @@ a:hover {
     margin: 5px auto;
   }
 
-.container {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-#aboutContainer {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-  #about {
+  .container {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
-   #h3about {
-   font-size: 100px;
-   text-align: center;
-   transform: rotate(-90deg);
-   margin: 0 0 0 -130px;
+  #aboutContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 350px;
+    margin: 20px 50px 20px 125px;
+  }
+
+  #h3about {
+    font-size: 100px;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -135px;
   }
 
   #sidebar {
-    margin: 0 0 0 -100px;
     height: 300px;
+    min-width: 200px;
   }
 
   #about-copy {
     width: 80%;
-    padding: 30px;
+    padding: 20px 0 20px 50px;
   }
 
-  #gallerycarousel {
-    margin: 0 0 0 0px;
+  #aboutContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 350px;
   }
 
-#projects {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  background-color: lavender;
+  #projectsContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 350px;
+  }
+
+  #h3projects {
+    font-size: 100px;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -212px;
+  }
+
+  #skillsContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 350px;
+  }
+
+  #h3skills {
+    font-size: 100px;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -126px;
+  }
+
+  #contactContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 480px;
+  }
+
+  #h3contact {
+    font-size: 100px;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -198px;
+  }
+
+  #contactForm {
+    padding: 20px 0;
+  }
+  
+  #contactInfo {
+    margin: 30px;
+  }
 }
-}
+
+/* STILL NEED TO:
+Add second breakpoint for About Section (and others?)
+Make carousel with javascript / make sure it doesn't overlap with "Projects" h3
+Add skills to skills Section
+Format contactForm way better
+Add  social media icons to contact links
+Make nave bar links actually navigate to appropriate page section with JS
+Remove and/or update Footer section?
+*/
