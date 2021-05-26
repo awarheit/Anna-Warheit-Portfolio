@@ -259,45 +259,8 @@ p {
 }
 
 /* WILL MAKE THIS WHOLE CAROUSEL SECTION BETTER ONCE I LEARN JAVASCRIPT!*/
-#gallerycarousel {
-  width: 90%;
-  min-height: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-#portfolioprojectfeature {
-  background-image: url("Photos/DroletRemodelingHomepageScreenshot.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 296.8px;
-  width: 460.6px;
-  margin: 0 -15px;
-}
 
-#portfolioprojectfeature:hover {
-  height: 424px;
-  width: 658px;
-  transition: 0.5s;
-}
-
-#portfolioproject2 {
-  background-image: url("Photos/AdditionRainbow.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 153.6px;
-  width: 273.2px;
-}
-
-#portfolioproject3 {
-  background-image: url("Photos/myportfolioscreenshot.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 153.6px;
-  width: 273.2px;
-}
 /* WILL MAKE THIS WHOLE CAROUSEL SECTION ^ BETTER ONCE I LEARN JAVASCRIPT!*/
 
 #contactContainer p {
@@ -341,6 +304,7 @@ a {
   line-height: 30px;
   font-family: "Newsreader", serif;
   font-weight: 200;
+  padding: 5px;
 }
 
 a:hover {
@@ -348,6 +312,11 @@ a:hover {
   color: #fff;
   font-weight: 600;
   text-shadow: 0 1px 1px #1f7a8c;
+}
+
+.icon {
+  width: 25px;
+  padding: 5px;
 }
 
 /* ------------------RESPONSIVE SIZING-----------------*/
@@ -524,11 +493,25 @@ a:hover {
 }
 
 /* STILL NEED TO:
+Adjust fonts / use consistent measurements by setting a global font size at beginning
+of CSS sheet, then use relative units, e.g.:
+      html {
+        font-size: 10px;
+      }
+Also consider adding the following to the whole sheet (will probably mess up what
+you've already done - should have done it from start - but try):
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 Add second breakpoint for About Section (and others?)
 Make carousel with javascript / make sure it doesn't overlap with "Projects" h3
 Add skills to skills Section
-Format contactForm way better
+Format contact Form way better
 Add  social media icons to contact links
 Make nave bar links actually navigate to appropriate page section with JS
 Remove and/or update Footer section?
+Double check height for all 4 sections (especially Projects!) to make sure h3 isn't wider than
+the section's height
 */

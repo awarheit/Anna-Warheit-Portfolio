@@ -30,3 +30,10 @@ navbarMenu.addEventListener("click", closeMobileNavbar);
 //navbarLinksContainer.addEventListener("click", (clickEvent) => {
  //   clickEvent.stopPropagation();
 //});
+
+
+
+// PROJECTS CAROUSEL:
+
+
+// END OF CAROUSEL
