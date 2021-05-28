@@ -97,21 +97,21 @@
 
         <h3 id="h3contact">Contact</h3>
         <form action="/tacos" id="contactForm">
-            <h2 id="formTitle">Submit Your Information Here:</h2>
+            <h2 id="formTitle">Let's Connect!</h2>
             <br>
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name"> <br>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name Here"> <br>
             <br>
             <label for="subject">Subject:</label>
-            <input type="text" name="subject" id="subject"> <br>
+            <input type="text" name="subject" id="subject" placeholder="What's on your mind?"> <br>
             <br>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email"> <br>
+            <input type="email" name="email" id="email" placeholder="(Required)" required> <br>
             <br>
-            <label for="message">Your Message</label>
-            <input type="text" name="message" id="message"> <br>
+            <label for="message">Your Message:</label> <br>
+            <textarea name="message" id="message" placeholder="(Required)" required rows="5" cols="28"></textarea> <br>
             <br>
-            <button>Submit</button>
+            <button id="formSubmit">Submit</button>
             <br>
         </form>
         <div id="contactInfo">
