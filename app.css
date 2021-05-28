@@ -429,18 +429,11 @@ a:hover {
     padding: 20px 0 20px 50px;
   }
 
-  #aboutContainer {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    min-height: 350px;
-  }
-
   #projectsContainer {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    min-height: 350px;
+    min-height: 475px;
   }
 
   #h3projects {
@@ -455,7 +448,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    min-height: 350px;
+    min-height: 375px;
   }
 
   #h3skills {
@@ -472,7 +465,7 @@ a:hover {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    min-height: 480px;
+    min-height: 475px;
   }
 
   #h3contact {
@@ -509,8 +502,7 @@ Add second breakpoint for About Section (and others?)
 Make carousel with javascript / make sure it doesn't overlap with "Projects" h3
 Add skills to skills Section
 Format contact Form way better
-Add  social media icons to contact links
-Make nave bar links actually navigate to appropriate page section with JS
+Make nav bar links actually navigate to appropriate page section with JS
 Remove and/or update Footer section?
 Double check height for all 4 sections (especially Projects!) to make sure h3 isn't wider than
 the section's height
