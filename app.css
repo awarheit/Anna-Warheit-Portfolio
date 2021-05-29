@@ -288,7 +288,7 @@ p {
   text-align: center;
   padding: 20px;
   text-align: center;
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 20px 20px;
   max-width: 450px;
   position: relative;
 }
@@ -353,7 +353,8 @@ a {
   line-height: 30px;
   font-family: "Newsreader", serif;
   font-weight: 200;
-  padding: 5px;
+  padding: 0 5px;
+  line-height: 40px;
 }
 
 a:hover {
@@ -361,12 +362,29 @@ a:hover {
   color: #fff;
   font-weight: 600;
   text-shadow: 0 1px 1px #1f7a8c;
+  
 }
 
 .icon {
-  width: 25px;
-  padding: 5px;
+  width: 40px;
+  padding: 0 10px;
+  position: relative;
+  bottom: -11px;
 }
+
+footer {
+  height: 75px;
+  background-color: #000b0f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  color: #268da1;
+}
+
 
 /* ------------------RESPONSIVE SIZING-----------------*/
 /* ------------------(Default Mobile)------------------*/
