@@ -259,7 +259,15 @@ p {
 }
 
 /* WILL MAKE THIS WHOLE CAROUSEL SECTION BETTER ONCE I LEARN JAVASCRIPT!*/
-
+#projectsGallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.projectScreenGrab {
+  width: 200px;
+  margin: 10px;
+}
 
 /* WILL MAKE THIS WHOLE CAROUSEL SECTION ^ BETTER ONCE I LEARN JAVASCRIPT!*/
 
