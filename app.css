@@ -1,5 +1,5 @@
 body {
-  background-color: #022b3a;
+  background-color: #000;
   margin: 0 auto;
 }
 
@@ -52,9 +52,9 @@ body {
 
 .navbarlink:focus,
 .navbarlink:hover {
-  color: #022b3a;
+  color: #bfdbf7;
   font-weight: 800;
-  text-shadow: 0 1px 1px #fff;
+  text-shadow: 0 0.5px 0.5px #022b3a;
 }
 
 .navbartoggle {
@@ -235,7 +235,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 10px auto;
+  margin: 10px 80px;
   width: 50%;
   height: 250px;
   border-radius: 0 18% 0 18%;
@@ -249,6 +249,7 @@ p {
   text-align: center;
 }
 
+#aboutContainer, 
 #projectsContainer,
 #skillsContainer,
 #contactContainer {
@@ -258,9 +259,10 @@ p {
   padding-bottom: 10px;
 }
 
-#projectsContainer {
+#aboutContainer {
   background-image: linear-gradient(#022b3a, #000);
 }
+
 
 /* WILL MAKE THIS WHOLE CAROUSEL SECTION BETTER ONCE I LEARN JAVASCRIPT!*/
 #projectsGallery {
@@ -342,13 +344,16 @@ p {
   font-size: 14px;
 }
 
-#name, #subject, #email, #message {
+#name,
+#subject,
+#email,
+#message {
   position: relative;
 }
 
 #message {
   height: 90px;
-  margin-top: 5px;  
+  margin-top: 5px;
 }
 
 #formSubmit {
@@ -360,15 +365,15 @@ p {
   font-size: 16px;
   letter-spacing: 2px;
   padding: 4px 6px;
-  font-weight:100;
+  font-weight: 100;
   border-radius: 10%;
   border: 0.2px solid #072631;
-  box-shadow: 0 0 10px #072631/*, -2px -2px -1px 1px grey*/;
+  box-shadow: 0 0 10px #072631 /*, -2px -2px -1px 1px grey*/;
 }
 
 #formSubmit:hover {
   font-weight: 400;
-  box-shadow: 2px 2px 8px  #000;
+  box-shadow: 2px 2px 8px #000;
   background-color: #03384b;
 }
 
@@ -392,7 +397,6 @@ a:hover {
   color: #fff;
   font-weight: 600;
   text-shadow: 0 1px 1px #1f7a8c;
-  
 }
 
 .icon {
@@ -404,7 +408,7 @@ a:hover {
 
 footer {
   height: 100px;
-  background-image: linear-gradient(#000,#072631);
+  background-image: linear-gradient(#000, #072631);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -442,7 +446,10 @@ footer p {
     height: 141px;
   }
 
-  #name, #subject, #email, #message {
+  #name,
+  #subject,
+  #email,
+  #message {
     width: 150px;
   }
 }
@@ -525,7 +532,7 @@ footer p {
 
   #aboutContainer {
     flex-direction: column;
-    margin: 10px;
+    margin: 10px auto;
   }
 
   #projectsGallery {
@@ -536,14 +543,17 @@ footer p {
     max-width: 90%;
     margin: 0 auto;
   }
-  
+
   #projectsGallery div {
     width: 300px;
     margin: 15px 10px;
     height: 169px;
   }
 
-  #name, #subject, #email, #message {
+  #name,
+  #subject,
+  #email,
+  #message {
     width: 225px;
   }
 
@@ -572,9 +582,14 @@ footer p {
   #aboutContainer {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     min-height: 350px;
-    margin: 20px 50px 20px 125px;
+    margin: 20px auto;
+  }
+
+  #about-copy {
+    width: 60%;
+
   }
 
   #h3about {
@@ -588,11 +603,12 @@ footer p {
   #sidebar {
     height: 300px;
     min-width: 200px;
+    margin: 0 0 0 100px;
   }
 
   #about-copy {
-    width: 80%;
-    padding: 20px 0 20px 50px;
+    width: 65%;
+    padding: 20px 50px;
   }
 
   #projectsContainer {
@@ -652,7 +668,7 @@ footer p {
   #contactForm {
     padding: 20px 0;
   }
-  
+
   #contactInfo {
     margin: 30px;
   }
@@ -681,7 +697,7 @@ you've already done - should have done it from start - but try):
         margin: 0;
         padding: 0;
       }
-Make carousel with javascript / make sure it doesn't overlap with "Projects" h3
+Make carousel with javascript / and/or add clickable links to projects once you host them on github pages
 Add skills to skills Section
 Make nav bar links actually navigate to appropriate page section with JS
 Find a way to host with functional backend for form submission
